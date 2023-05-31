@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -32,29 +32,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/add_btn"
-            android:layout_marginHorizontal="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             android:layout_weight="1"
             android:text="Add"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/update_btn"
-            android:layout_marginHorizontal="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             android:layout_weight="1"
             android:text="Update"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/delet_btn"
-            android:layout_marginHorizontal="@dimen/_1sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             android:layout_weight="1"
             android:text="Delet"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/view_btn"
-            android:layout_marginHorizontal="@dimen/_1sdp"
-            android:layout_weight="1"
-            android:text="View"/>
+
     </LinearLayout>
 </LinearLayout>

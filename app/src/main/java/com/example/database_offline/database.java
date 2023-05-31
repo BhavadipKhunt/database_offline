@@ -44,7 +44,7 @@ public class database extends SQLiteOpenHelper {
         liteDatabase.execSQL(up);
     }
 
-    public void deletconcact(int id) {
+    public void deletconcact() {
         SQLiteDatabase database1=getWritableDatabase();
         String dele="delete from contact ";
         database1.execSQL(dele);
