@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <TextView
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/name_textview"
+          android:textSize="@dimen/_20sdp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/number_textview"
+          android:textSize="@dimen/_20sdp"/>
+  </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/name_textview"
-        android:textSize="@dimen/_20sdp"></TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/number_textview"
-        android:textSize="@dimen/_20sdp"></TextView>
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/optionMenu"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_more_vert_24"/>
+    </LinearLayout>
 
 </LinearLayout>

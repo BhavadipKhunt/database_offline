@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import java.util.ArrayList;
-
 public class database extends SQLiteOpenHelper {
     public database(@Nullable Context context) {
         super(context, "Contactbook", null, 1);
@@ -44,9 +42,9 @@ public class database extends SQLiteOpenHelper {
         liteDatabase.execSQL(up);
     }
 
-    public void deletconcact() {
+    public void deletconcact(int id) {
         SQLiteDatabase database1=getWritableDatabase();
-        String dele="delete from contact ";
+        String dele="delete from contact where id="+id+" ";
         database1.execSQL(dele);
     }
 }

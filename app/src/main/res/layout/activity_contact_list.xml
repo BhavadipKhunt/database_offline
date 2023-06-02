@@ -18,6 +18,7 @@
         android:scaleY="1.5"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
         android:id="@+id/fab"/>
 </RelativeLayout>
